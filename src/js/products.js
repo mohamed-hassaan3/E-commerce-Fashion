@@ -1,0 +1,51 @@
+//STORING DATA
+const products = [
+    {
+        id : 0,
+        img: "product.png",
+        name: 'PANTS',
+        price: "60.88",
+        stock: 13,
+        desc: "Lorem ipsum dolor sit amet, abc consectetur adipisicing elit",
+    },
+    {
+        id: 1,
+        img: "product.png",
+        name: 'Short',
+        price: "20.00",
+        stock: 11,
+        desc: "Lorem ipsum dolor sit amet, abc consectetur adipisicing elit",
+    },
+    {   
+        id: 2,
+        img: "product.png",
+        name: 'T-shirt',
+        price: "44.00",
+        stock: 6,
+        desc: "Lorem ipsum dolor sit amet, abc consectetur adipisicing elit",
+    },
+    {
+        id : 3,
+        img: "product.png",
+        name: 'Socks',
+        price: "5.88",
+        stock: 12,
+        desc: "Lorem ipsum dolor sit amet, abc consectetur adipisicing elit",
+    },
+    {
+        id: 4,
+        img: "product.png",
+        name: 'Shoes',
+        price: "90.00",
+        stock: 5,
+        desc: "Lorem ipsum dolor sit amet, abc consectetur adipisicing elit",
+    },
+    {   
+        id: 5,
+        img: "product.png",
+        name: 'Slipper',
+        price: "10.00",
+        stock: 8,
+        desc: "Lorem ipsum dolor sit amet, abc consectetur adipisicing elit",
+    },
+];
