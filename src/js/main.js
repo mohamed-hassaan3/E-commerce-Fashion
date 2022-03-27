@@ -60,16 +60,17 @@ const load = () => {
         `
     });
     gown.forEach((product) => {
+        cardGown.innerHTML += "";
         cardGown.innerHTML += `
             <div class="card-contain">
                 <div class="card-img" width="268px">
-                    <img src="/src/img/${product.img}" width="100%"alt="${product.name}">
+                    <img src="/src/img/${product.img}" width="100%" alt="${product.name}">
                     <p>${product.name}</p>
                     <span>$${product.price}</span>
                 </div>
                 <div class="card-title">
                     <p>${product.desc}</p>
-                    <button>ADD TO CART</button>
+                    <button class="add" onclick= "addToCartGown(${product.id})">ADD TO CART</button>
                 </div>
             </div>
         `
@@ -85,7 +86,7 @@ const addToCart = (id) => {
     if(cart.some((product) => product.id === id)){
         changeNumberOfUnits ('plus', id)
     } else {
-        const item = products.find((product) => product.id === id)
+        const item = products.find((product) => product.id === id);
         cart.push({
             ...item,
             unitNumber: 1,
@@ -95,6 +96,19 @@ const addToCart = (id) => {
     updateCart();
 };
 
+const addToCartGown = (id) => {
+    if(cart.some((product) => product.id === id)){
+        changeNumberOfUnits ('plus', id)
+    } else {
+        const item = gown.find((product) => product.id === id);
+        cart.push({
+            ...item,
+            unitNumber: 1,
+        })
+        console.log(cart);
+    }
+    updateCart();
+};
 const updateCart = () => {
     renderItem();
     calculateItem();

@@ -226,7 +226,8 @@ span {
     padding: 0 25px;
     margin: 0 auto;
 }
-.card .card-img p, .card-gown .card-img p{
+.card .card-img p,
+.card-gown .card-img p{
     display: inline-block;
     font-weight: 900;
 }
@@ -453,7 +454,8 @@ span {
     .latest-product {
         padding: 20px;
     }
-    .latest-product .card {
+    .latest-product .card,
+    .latest-product .card-gown {
         grid-template-columns: repeat(2, 1fr);
     }
     .fashion {
@@ -550,7 +552,8 @@ span {
         font-size: 25px;
         margin-bottom: 0;
     }
-    .latest-product .card {
+    .latest-product .card,
+    .latest-product .card-gown {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
