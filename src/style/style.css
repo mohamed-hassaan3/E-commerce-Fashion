@@ -91,7 +91,6 @@ body {
 }
 .checkout {
     background-color: var(--premiumColor);
-    /* padding: 15px 0; */
 }
 .checkout button {
     border: none;
@@ -420,6 +419,9 @@ span {
     }
     .navbar .log a {
         padding: 8px 22px;
+    }
+    .cart1 {
+        width: 100%;
     }
     .presentation {
         padding: 0 0 0 20px !important;
