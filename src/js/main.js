@@ -7,6 +7,7 @@ const counter = document.querySelector('.counter')
 const subtotal = document.querySelector('.subtotal');
 const totalPrices = document.querySelector('.total');
 const card = document.querySelector('.card');
+const cardGown = document.querySelector('.card-gown');
 const cart_items = document.querySelector('.cart');
 
 menu.addEventListener('click', () => {
@@ -57,7 +58,22 @@ const load = () => {
             </div>
         </div>
         `
-    })
+    });
+    gown.forEach((product) => {
+        cardGown.innerHTML += `
+            <div class="card-contain">
+                <div class="card-img" width="268px">
+                    <img src="/src/img/${product.img}" width="100%"alt="${product.name}">
+                    <p>${product.name}</p>
+                    <span>$${product.price}</span>
+                </div>
+                <div class="card-title">
+                    <p>${product.desc}</p>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        `
+    });
 }
 load()
 
@@ -92,7 +108,7 @@ const renderItem = () => {
         cart_items.innerHTML += `
             <div class="cart-content">
                 <div class="item">
-                    <img src="/src/img/${item.img}" alt="${item.name}">
+                    <img src="/src/img/${item.img}" width="100%" alt="${item.name}">
                 </div>
                 <div class="title">
                     <h3 class="head">${item.name}</h3>
