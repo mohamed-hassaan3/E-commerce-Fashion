@@ -492,7 +492,7 @@ span {
     }
     .navbar {
         background-color: rgba(229, 229, 229, 0.52);
-        display: flex;
+        display: none;
         margin-top: 60px;
         flex-direction: column;
     }
