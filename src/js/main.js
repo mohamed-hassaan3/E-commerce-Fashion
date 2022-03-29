@@ -11,11 +11,11 @@ const cardGown = document.querySelector('.card-gown');
 const cart_items = document.querySelector('.cart');
 
 menu.addEventListener('click', () => {
-    if(list.style.display === "block" ) {
+    if(list.style.display === "flex" ) {
         list.style.display = "none";
         cart1.style.display = "none";
     } else {
-        list.style.display = "block"
+        list.style.display = "flex"
     }
 })
 

@@ -12,7 +12,12 @@ function navigation () {
                 <li><a  class="item-nav "href="#">Skirt</a></li>
                 <li><a  class="item-nav "href="#">Blouse</a></li>
                 <li><a  class="item-nav "href="#">Trousers</a></li>
-                <li><a class="cart-icon" href="#"><img src="/src/icon/Vector.png" width="30px" height="30px" alt="cart"><span class="counter"></span></a></li>
+                <li class="item-cart">
+                <a class="cart-icon" href="#">
+                <img src="/src/icon/Vector.png" width="30px" height="30px" alt="cart">
+                <span class="counter"></span>
+                </a>
+                </li>
             </ul>
             <div class="log"><a href="#">Login</a></div>
     `

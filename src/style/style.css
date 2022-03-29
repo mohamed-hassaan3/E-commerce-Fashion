@@ -12,7 +12,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+html {
     font-family: sans-serif;
     overflow-x: hidden;
 }
@@ -35,7 +35,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 36px;
-    position: relative;
 }
 .menu-icon {
     display: none;
@@ -441,6 +440,7 @@ span {
     }
     .cart1 {
         width: 100%;
+        top: 106px;
     }
     .presentation {
         padding: 0 0 0 20px !important;
@@ -476,6 +476,7 @@ span {
     }
 }
 @media screen and (max-width: 768px) {
+    
     html {
         font-size: .9rem;
     }
@@ -491,12 +492,17 @@ span {
     }
     .navbar {
         background-color: rgba(229, 229, 229, 0.52);
-        display: none;
+        display: flex;
         margin-top: 60px;
+        flex-direction: column;
     }
     .navbar .logo  {
         text-align: center;
         padding: 10px 0;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .navbar ul {
         display: flex;
@@ -525,7 +531,9 @@ span {
     .cart1  {
         background-color: #fff;
         width: 100%;
-        margin-top: 14px;
+        position: absolute;
+        top: 50px;
+        display: none;
     }
     .cart1 .quantity {
         display: flex;
@@ -534,8 +542,9 @@ span {
         padding: 0 5px;
         font-size: 12px;
     }
-    .quantity .plus, .quantity .minus {
-        padding: 2px;
+    .quantity .plus,
+    .quantity .minus {
+        padding: 0;
         background-color: transparent;
     }
     .presentation {
@@ -563,10 +572,11 @@ span {
     }
     .fashion {
         display: block;
-        padding: 20px;
+        padding: 20px 8px;
     }
     .fashion .fashion-img {
-        margin: auto;
+        margin: 0 auto;
+        width: 80%;
     }
     .description {
         font-size: 1rem;
@@ -587,7 +597,8 @@ span {
         padding: 18px 24px;
     }
     .newsletter-contain .news-img {
-        margin: auto;
+        margin: 0 auto;
+        width: 80%;
     }
     .news-title h1 {
         font-size: 1.2rem;
