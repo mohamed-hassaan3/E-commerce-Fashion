@@ -143,7 +143,7 @@ html {
     border-radius: 50%;
     transition: .7s;
 }
-.quantity .minus:hover, .plus:hover {
+.quantity .minus:hover, .quantity .plus:hover {
     background-color: var(--premiumColor);
     color: #fff;
 }
@@ -542,19 +542,24 @@ span {
         display: flex;
     }
     .quantity span {
-        padding: 0 5px;
+        padding: 8px;
         font-size: 12px;
     }
     .quantity .plus,
     .quantity .minus {
         padding: 0;
-        background-color: transparent;
+        background-color: #fff;
+    }
+    .quantity .plus:hover,
+    .quantity .minus:hover {
+        padding: 0;
+        background-color: #fff;
+        color: #000;
     }
     .presentation {
         font-size: 1rem;
         padding: 20px !important;
         margin-top: 60px;
-
     }
     .latest-design a {
         padding: 18px 24px !important;
