@@ -496,6 +496,9 @@ span {
         margin-top: 60px;
         flex-direction: column;
     }
+    .navbar-list {
+        display: flex;
+    }
     .navbar .logo  {
         text-align: center;
         padding: 10px 0;

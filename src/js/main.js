@@ -10,14 +10,20 @@ const card = document.querySelector('.card');
 const cardGown = document.querySelector('.card-gown');
 const cart_items = document.querySelector('.cart');
 
+/* MENU LIST TOGGLE */
 menu.addEventListener('click', () => {
-    if(list.style.display === "flex" ) {
-        list.style.display = "none";
-        cart1.style.display = "none";
-    } else {
-        list.style.display = "flex"
+    list.classList.toggle('navbar-list')
+    cart1.style.display = "none"
+});
+
+/* CART LIST ITEM TOGGLE */
+cartIcon.addEventListener('click', () => {
+    if(cart1.style.display === 'block') {
+        cart1.style.display = 'none'
+    }else{
+        cart1.style.display = 'block'
     }
-})
+});
 
 /* NAVIGATION ACTIVE */
 const item_nav = document.querySelectorAll('.navbar .item-nav');
@@ -29,14 +35,6 @@ item_nav.forEach((i) => {
     })
 });
 
-/* CART LIST ITEM TOGGLE */
-cartIcon.addEventListener('click', () => {
-    if(cart1.style.display === 'block') {
-        cart1.style.display = 'none'
-    }else{
-        cart1.style.display = 'block'
-    }
-});
 
 
 
