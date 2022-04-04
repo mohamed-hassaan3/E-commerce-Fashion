@@ -76,8 +76,21 @@ const load = () => {
 }
 load()
 
+// RENDER ITEMS IN CART
+document.addEventListener("DOMContentLoaded", storageItem);
+
 // STORE ITEMS IN CART
 let cart = [];
+
+// STORAGE ITEMS IF THE CART EMPTY
+function storageItem () {
+    if(localStorage.getItem("CART") === null) {
+        cart = []
+    } else {
+        cart = JSON.parse(localStorage.getItem("CART"))
+    }
+    updateCart()
+}
 
 // ADD PRODUCTS TO CART
 const addToCart = (id) => {
@@ -110,6 +123,9 @@ const addToCartGown = (id) => {
 const updateCart = () => {
     renderItem();
     calculateItem();
+
+    // SAVE A CART ITEM IN LOCAL STORAGE
+    localStorage.setItem("CART", JSON.stringify(cart));
 };
 
 // RENDER ITEM IN CART
