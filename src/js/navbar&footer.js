@@ -6,12 +6,12 @@ function navigation () {
                 <a href="#"><img src="/src/img/Logo.png" width="190px" height="35px" alt="logo"></a>
             </div>
             <ul>
-                <li><a  class="item-nav active"href="#">Home</a></li>
-                <li><a  class="item-nav "href="#">New Arrivals</a></li>
-                <li><a  class="item-nav "href="#">Gown</a></li>
-                <li><a  class="item-nav "href="#">Skirt</a></li>
-                <li><a  class="item-nav "href="#">Blouse</a></li>
-                <li><a  class="item-nav "href="#">Trousers</a></li>
+                <li><a class="item-nav active"href="#">Home</a></li>
+                <li><a class="item-nav "href="#latest">New Arrivals</a></li>
+                <li><a class="item-nav "href="#gown">Gown</a></li>
+                <li><a class="item-nav "href="#skirt">Skirt</a></li>
+                <li><a class="item-nav "href="#blouse">Blouse</a></li>
+                <li><a class="item-nav "href="#trousers">Trousers</a></li>
                 <li class="item-cart">
                 <a class="cart-icon" href="#">
                 <img src="/src/icon/Vector.png" width="30px" height="30px" alt="cart">

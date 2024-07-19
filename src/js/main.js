@@ -9,11 +9,33 @@ const totalPrices = document.querySelector('.total');
 const card = document.querySelector('.card');
 const cardGown = document.querySelector('.card-gown');
 const cart_items = document.querySelector('.cart');
+const navbarElement = document.getElementById('navbar');
+const menuItems = document.querySelectorAll('.navbar li a');
 
 /* MENU LIST TOGGLE */
 menu.addEventListener('click', () => {
     list.classList.toggle('navbar-list')
     cart1.style.display = "none"
+    
+});
+
+/* Function to check scroll position and add/remove class */
+function handleScroll() {
+    if (window.scrollY > 50) {
+        navbarElement.classList.add('scrolled');
+    } else {
+        navbarElement.classList.remove('scrolled');
+    }
+}
+window.addEventListener('scroll', handleScroll);
+
+function closeMenu() {
+    navbarElement.classList.remove('navbar-list');
+}
+
+// Add event listeners to menu items
+menuItems.forEach(item => {
+    item.addEventListener('click', closeMenu);
 });
 
 /* CART LIST ITEM TOGGLE */
